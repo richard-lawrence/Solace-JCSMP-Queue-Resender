@@ -21,7 +21,10 @@ mvn clean dependency:copy-dependencies package
 
 ## Running
 
-Usage: java JcsmpQueueResender [options]
+```
+CLASSPATH=./target/JcsmpQueueResender-1.0.jar:./target/dependency/*
+java -cp $CLASSPATH  com.solace.JcsmpQueueResender [options]
+```
 
 Where options are:
 
